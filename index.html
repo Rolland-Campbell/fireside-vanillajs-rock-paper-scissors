@@ -10,8 +10,62 @@
   <title>Vanillajs Rock Paper Scissors</title>
 </head>
 
-<body>
+<body class="container-fluid">
+  <header class="row titleRow">
+    <h1>Rock Paper Scissors</h1>
+    <h5>Click a picture to use numbers to decide the winner</h5>
+  </header>
 
+  <main class="row rowStyle">
+    <div class="col-12 colStyle">
+      <!-- Rock picture, col-12 when mobile, col-3 laptop or higher -->
+      <div class="col-12 col-md-3 ">
+        <img
+          src="https://images.homedepot-static.com/productImages/94af8836-0338-4802-914e-04cc71e562ad/svn/backyard-x-scapes-fake-rocks-hdd-rof-rocsb-64_1000.jpg"
+          alt="rock pic" onclick="play(0)">
+      </div>
+
+      <!-- Paper picture, col-12 when mobile, col-3 laptop or higher -->
+      <div class="col-12 col-md-3 colStyle">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Toiletpapier_%28Gobran111%29.jpg/1200px-Toiletpapier_%28Gobran111%29.jpg"
+          alt="paper pic" onclick="play(1)">
+      </div>
+
+      <!-- Scissors picture, col-12 when mobile, col-3 laptop or higher -->
+      <div class="col-12 col-md-3 colStyle">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/76/Pair_of_scissors_with_black_handle%2C_2015-06-07.jpg"
+          alt="scissors pic" onclick="play(2)">
+      </div>
+    </div>
+
+    <div class="col-12 buttonRow">
+      If you like strings instead of numbers (click a button)
+      <button class="btn btn-info" onclick="playString('rock')">Rock</button>
+      <button class="btn btn-info" onclick="playString('paper')">Paper</button>
+      <button class="btn btn-info" onclick="playString('scissors')">Scissors</button>
+    </div>
+
+    <div class="col-12">
+      <!-- player choice element -->
+      <div class="col-12 text-center" id="playerChoice">
+      </div>
+
+      <!-- computer choice element -->
+      <div class="col-12 text-center" id="computerChoice">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- The outcome -->
+  <footer class="row">
+    <div class="col-12 text-center" id="outcome">
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
