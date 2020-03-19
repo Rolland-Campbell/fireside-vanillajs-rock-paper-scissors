@@ -23,11 +23,7 @@ img{
 
 main{
   justify-content: space-evenly;
-  height: 80vh;
-}
-
-footer{
-height: 10vh;
+  height: 90vh;
 }
 
 .rowStyle{
@@ -56,6 +52,7 @@ align-items: center;
   display: grid;
   justify-content: center;
   height: 4vh;
+  margin-bottom: 15vh;
 }
 
 .btn{
